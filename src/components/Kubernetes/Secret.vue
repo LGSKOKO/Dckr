@@ -84,13 +84,13 @@ export default {
 
       //判断命名空间是否为空
       if(commonUtil.isStrEmpty(namespace)){
-        this.error("命名空间不能为空");
+        commonUtil.error("命名空间不能为空");
         return;
       }
       //判断 key value是否都为空
       let isStrEmpty = commonUtil.isStrEmpty(key) || commonUtil.isStrEmpty(value);
       if (isStrEmpty) {
-        this.error("加密数据的key/value不能为空")
+        commonUtil.error("加密数据的key/value不能为空")
         return;
       }
       //value 进行Base64编码的加密
@@ -98,12 +98,6 @@ export default {
 
       this.secret.data[key] = encoded_str;
       this.constructContent();
-    },
-    //失败消息提示函数
-    error: function (title) {
-      this.$Notice.error({
-        title: title,
-      });
     },
   }
 }

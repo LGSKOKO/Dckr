@@ -121,7 +121,7 @@ export default {
         let service = commonUtil.deepClone(this.service);
         this.content = json2yaml.stringify(service).replaceAll("\"","");
       }else{
-        this.error("尚未匹配标签！！！");
+        commonUtil.error("尚未匹配标签！！！");
       }
     },
     //添加匹配标签
@@ -131,7 +131,7 @@ export default {
 
       let flag = commonUtil.isStrEmpty(key) || commonUtil.isStrEmpty(value);
       if (flag) {
-        this.error("匹配标签失败，key/value不能为空");
+        commonUtil.error("匹配标签失败，key/value不能为空");
       } else {
         //为selector添加属性
         this.service.spec.selector[key] = value;
@@ -157,7 +157,7 @@ export default {
       let targetPort = this.temp.port.targetPort.trim();
       let flag = commonUtil.isStrEmpty(port) || commonUtil.isStrEmpty(targetPort);
       if (flag) {
-        this.error("端口映射失败，端口内容不能为空");
+        commonUtil.error("端口映射失败，端口内容不能为空");
       } else {
         //构建对象并进行存储
         let obj = {};
@@ -195,12 +195,7 @@ export default {
 
       this.constructContent();
     },
-    //失败消息提示函数
-    error: function (title) {
-      this.$Notice.error({
-        title: title,
-      });
-    },
+
   }
 }
 </script>
