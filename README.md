@@ -1,6 +1,6 @@
 # Dckr  (Docker+ Compose+Kubernets+Rancher)
 
- **`Dckr`**是一款基于Docker的容器配置及编排的向导式构建工具。（支持Docker、Compose、Kubernets、Rancher的资源文件向导式构建）
+ `Dckr` 是一款基于Docker的容器配置及编排的向导式构建工具。（支持Docker、Compose、Kubernets、Rancher的资源文件向导式构建）
 
 **通过它，你可以轻松完成以下操作：**
 
@@ -22,7 +22,7 @@
 
 ### 向导式构建平台首页
 
-- ![Image](https://raw.github.com/LGSKOKO/Dckr/Main/screenshort/向导式构建平台首页.png)
+- ![Image](https://raw.github.com/LGSKOKO/Dckr/main/screenshort/向导式构建平台首页.png)
 
 ### Docker模块
 
