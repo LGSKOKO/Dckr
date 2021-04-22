@@ -22,7 +22,7 @@
 
 ### 向导式构建平台首页
 
-- ![Image](https://raw.github.com/LGSKOKO/Dckr/main/screenshort/向导式构建平台首页.png)
+- ![Image](https://raw.github.com/LGSKOKO/Dckr/main/screenshot/向导式构建平台首页.png)
 
 ### Docker模块
 
