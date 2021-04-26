@@ -1,6 +1,6 @@
 #  Dckr  (Docker+ Compose+Kubernets+Rancher)
 
-![](https://img.shields.io/badge/build-passing-brightgreen)![](https://img.shields.io/badge/Vue-reference-blue)![](https://img.shields.io/badge/license-MPL--2.0-orange)
+![](https://img.shields.io/badge/build-passing-brightgreen) ![](https://img.shields.io/badge/Vue-reference-blue) ![](https://img.shields.io/badge/license-MPL--2.0-orange)
 
  `Dckr` 是一款基于Docker的容器配置及编排的向导式构建工具。（支持Docker、Compose、Kubernets、Rancher的资源文件向导式构建）
 
@@ -23,7 +23,7 @@
 ### 本地运行
 
 ```
-git https://github.com/LGSKOKO/Dckr.git
+git clone https://github.com/LGSKOKO/Dckr.git
 
 cd Dckr
 
@@ -34,6 +34,14 @@ npm run serve
 ```
 
 ### 服务器部署
+
+```
+#1、修改项目src目录下的request.js文件，将localhost改为具体的后端部署ip地址
+#2、执行下面命令
+npm run build
+#3、将dist目录拷贝至已安装配置好的Web服务器上（apache或nginx等）。
+#4、输入相应的http地址即可，大功告成！！！
+```
 
 ### 容器部署
 
