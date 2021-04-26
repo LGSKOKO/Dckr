@@ -566,6 +566,13 @@ export default {
 
       this.$axios.post(createRancherByGuide, this.rancherUpload).then((response) => {
         this.downloadPath = response.data.data.downloadPath;
+        let code = response.data.code;
+        let message = response.data.message;
+        if (code !== 200) {
+          commonUtil.error(message);
+        } else {
+          commonUtil.success(message);
+        }
       }).catch((error) => {
         commonUtil.error("后台构建rancher出现错误！");
       });
