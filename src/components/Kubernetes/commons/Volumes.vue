@@ -148,7 +148,7 @@ export default {
     },
     //数据卷相关添加方法
     addEmptyDirVolume() {
-      this.emptyDirs.push(this.emptyDirVolume);
+      this.emptyDirs.push(commonUtil.deepClone(this.emptyDirVolume));
       let str = this.emptyDirVolume.name;
       this.emptyDirsTip.push(str);
 
@@ -156,7 +156,7 @@ export default {
       this.addStoreVolume('emptyDir', str);
     },
     addHostPathVolume() {
-      this.hostPaths.push(this.hostPathVolume);
+      this.hostPaths.push(commonUtil.deepClone(this.hostPathVolume));
       let str = this.hostPathVolume.name;
       this.hostPathsTip.push(str);
 
